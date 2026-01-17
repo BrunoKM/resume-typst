@@ -80,22 +80,40 @@
   v(4pt)
 }
 
+// Venue color for publications
+#let venue-color = gray-text.darken(20%)
+
 // Multiple publications in a single aligned grid
 // Usage: cv-pubs((
-//   (year: "2025", link: "https://...", title: "Paper Title", authors: [...], venue: [...]),
+//   (year: "2025", link: "https://...", title: "Paper Title", authors: [...], venue: [...], extra: [...]),
 //   ...
 // ))
+// Note: extra is optional and appears below authors if specified
 #let cv-pubs(pubs) = {
   grid(
-    columns: (auto, 1fr),
-    column-gutter: 1em,
-    row-gutter: 0.8em,
+    columns: (auto,2.5cm, 1fr),
+    align: (left + horizon, center + horizon, left + top),
+    column-gutter: 0.6em,
+    row-gutter: 0.85em,
     ..pubs.map(pub => (
-      align(right)[#text(weight: "bold", fill: light-gray, pub.year)],
+      text(size: 8pt, fill: light-gray.lighten(20%), pub.year),
+      align(center)[
+        #text(fill: venue-color)[#if "venue" in pub [#pub.venue]]
+        #if "award" in pub [\ #text(fill: black, size: 1.09em)[*#pub.award *]]
+      ],
       [
-        #link(pub.link)[#text(fill: awesome-blue, weight: "bold")[#pub.title]] \
-        #pub.authors
-        #if pub.venue != none [ \ #pub.venue]
+        #par(spacing: 0.3em)[
+          #link(pub.link)[#text(fill: awesome-blue.darken(30%), weight: "bold")[#pub.title]]
+        ]
+        #par(spacing: 0.3em)[
+          #text(fill: gray-text.darken(20%))[#pub.authors]
+        ]
+        #if "extra" in pub and pub.extra != none [
+          #par(spacing: 0.2em)[
+            #text(fill: gray-text.lighten(10%))[#pub.extra]
+          ]
+        ]
+        // #if pub.venue != none [ \ #text(style: "italic", fill: venue-color)[#pub.venue]]
       ],
     )).flatten()
   )
