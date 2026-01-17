@@ -7,6 +7,13 @@
 #let gray-text = rgb("#5D5D5D")
 #let light-gray = rgb("#999999")
 
+#let palette1 = rgb(204, 57, 42)
+#let palette2 = rgb(79, 155, 143)
+#let palette3 = rgb(44, 97, 194)
+#let palette4 = rgb(217, 116, 89)
+#let palette5 = rgb(228, 197, 119)
+#let palette6 = rgb(63, 100, 67)
+
 // Helper functions
 #let section-title(title) = {
   v(1.2em)
@@ -73,14 +80,25 @@
   v(4pt)
 }
 
-#let cv-pub(year: none, content) = {
+// Multiple publications in a single aligned grid
+// Usage: cv-pubs((
+//   (year: "2025", link: "https://...", title: "Paper Title", authors: [...], venue: [...]),
+//   ...
+// ))
+#let cv-pubs(pubs) = {
   grid(
     columns: (auto, 1fr),
     column-gutter: 1em,
-    align(right)[#text(weight: "bold", fill: light-gray, year)],
-    content,
+    row-gutter: 0.8em,
+    ..pubs.map(pub => (
+      align(right)[#text(weight: "bold", fill: light-gray, pub.year)],
+      [
+        #link(pub.link)[#text(fill: awesome-blue, weight: "bold")[#pub.title]] \
+        #pub.authors
+        #if pub.venue != none [ \ #pub.venue]
+      ],
+    )).flatten()
   )
-  v(4pt)
 }
 
 #let cv-award(

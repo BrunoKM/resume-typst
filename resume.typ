@@ -24,16 +24,21 @@
 // ============================================================================
 
 #align(center)[
-  #text(28pt, weight: "light", fill: dark-text)[Bruno K.] #text(28pt, weight: "bold", fill: dark-text)[Mlodozeniec]
+  #par(spacing: 8pt)[
+
+    #text(28pt, weight: "regular", fill: dark-text)[Bruno K. Mlodozeniec]
+
+  ]
+  #line(length: 38%, stroke: 1pt)
 
   #text(10pt, weight: "medium", fill: gray-text)[PhD in Machine Learning]
 
-  #v(4pt)
   #text(9pt, fill: gray-text)[University of Cambridge]
 
   #v(6pt)
-  #text(6pt, fill: gray-text, font: "SF NS Mono")[
+  #text(7pt, fill: gray-text, font: "SF NS Mono")[
   // #text(9pt, fill: gray-text)[
+    #h(1fr)
     (+44) 7491 337 951
     #h(1fr) | #h(1fr)
     #link("mailto:bkmlodozeniec@gmail.com")[bkmlodozeniec\@gmail.com]
@@ -43,6 +48,7 @@
     #link("https://github.com/BrunoKM")[github.com/BrunoKM]
     #h(1fr) | #h(1fr)
     #link("https://brunokm.github.io")[brunokm.github.io]
+    #h(1fr)
   ]
 ]
 
