@@ -37,18 +37,17 @@
 
   #v(6pt)
   #text(7pt, fill: gray-text, font: "SF NS Mono")[
-  // #text(9pt, fill: gray-text)[
-    #h(1fr)
+    // #h(1fr)
     (+44) 7491 337 951
     #h(1fr) | #h(1fr)
     #link("mailto:bkmlodozeniec@gmail.com")[bkmlodozeniec\@gmail.com]
     #h(1fr) | #h(1fr)
-    #link("https://linkedin.com/in/bkmlodozeniec")[in/bkmlodozeniec]
+    #link("https://brunokm.github.io")[brunokm.github.io]
+    #h(1fr) | #h(1fr)
+    #box(inset: 0pt, outset: 0pt, image("figures/linkedin.svg", height: 1em), baseline: 0.1em) #link("https://linkedin.com/in/bkmlodozeniec")[in/bkmlodozeniec]
     #h(1fr) | #h(1fr)
     #link("https://github.com/BrunoKM")[github.com/BrunoKM]
-    #h(1fr) | #h(1fr)
-    #link("https://brunokm.github.io")[brunokm.github.io]
-    #h(1fr)
+    // #h(1fr)
   ]
 ]
 
