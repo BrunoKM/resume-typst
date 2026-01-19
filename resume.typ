@@ -17,7 +17,7 @@
 
 // Font settings
 #set text(font: "Charter", size: 9pt)
-#set par(justify: false, leading: 0.20em, spacing: 0.4em)
+#set par(justify: false, leading: 0.33em, spacing: 0.4em)
 
 // ============================================================================
 // HEADER
@@ -44,9 +44,9 @@
     #h(1fr) | #h(1fr)
     #link("https://brunokm.github.io")[brunokm.github.io]
     #h(1fr) | #h(1fr)
-    #box(inset: 0pt, outset: 0pt, image("figures/linkedin.svg", height: 1em), baseline: 0.1em) #link("https://linkedin.com/in/bkmlodozeniec")[in/bkmlodozeniec]
+    #link("https://linkedin.com/in/bkmlodozeniec")[#box(inset: 0pt, outset: 0pt, image("figures/linkedin.svg", height: 1em), baseline: 0.15em)#h(0.2em)/bkmlodozeniec]
     #h(1fr) | #h(1fr)
-    #link("https://github.com/BrunoKM")[github.com/BrunoKM]
+    #link("https://github.com/BrunoKM")[#box(inset: 0pt, outset: 0pt, image("figures/github.svg", height: 1em), baseline: 0.15em)#h(0.4em)github.com/BrunoKM]
     // #h(1fr)
   ]
 ]
