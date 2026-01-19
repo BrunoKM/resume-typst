@@ -4,18 +4,26 @@
 #section-title("Education")
 
 #cv-entry(
-  title: [PhD in Advanced Machine Learning \ #text(size: 8pt, weight: "regular")[Supervised by Richard Turner, David Krueger and Bernhard Schölkopf]],
+  title: [PhD in Advanced Machine Learning],
   organization: [University of Cambridge],
   date: [Jan 2023–2026],
   location: [Department of Engineering],
-  description: [Scaling and hyperparameter transfer, understanding optimisation & generalisation in deep learning, influence functions, theory.],
+  description: [
+    Supervised by Richard Turner, David Krueger and Bernhard Schölkopf.
+
+    Scaling and hyperparameter transfer, understanding optimisation & generalisation in deep learning, influence functions, theory.
+  ],
+  logo: "/figures/cambridge-logo.svg",
+  major: [Advanced Machine Learnin],
 )
 
 #cv-entry(
-  title: [Master of Engineering \ #text(size: 8pt, weight: "regular")[Computer and Information Engineering]],
+  title: [Master of Engineering],
   organization: [University of Cambridge],
   date: [2016–2020],
-  location: [Emmanuel College],
+  location: [Department of Engineering],
+  major: [Computer and Information Engineering],
+  logo: "/figures/cambridge-logo.svg",
 )
 
 #block(inset: (left: 1em))[

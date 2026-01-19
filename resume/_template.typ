@@ -31,19 +31,29 @@
   organization: none,
   date: none,
   location: none,
+  major: none,
   description: none,
+  logo: none,
 ) = {
   grid(
     columns: (1fr, auto),
     column-gutter: 1em,
     row-gutter: 0.3em,
     [
-      #text(weight: "bold", fill: dark-text, organization)
-      #if title != none {
-        [ --- #text(fill: dark-text, title)]
-      }
+      #if logo != none [
+        #h(0.1em)#box(inset: 0pt, outset: 0pt, image(logo, height: 1.2em), baseline: 0.25em)#h(0.3em)
+      ]
+      #text(size: 1.03em, weight: "bold", fill: dark-text)[
+        *#organization *
+        #if title != none [#h(0.05em)|#h(0.3em)#text(size: 1.05em, fill: black)[#title]]
+      ]
     ],
     align(right)[#text(fill: gray-text, date)],
+    {
+      if major != none {
+        text(fill: gray-text, style: "regular", major)
+      }
+    },
     if location != none {
       text(fill: gray-text, style: "italic", location)
     },
@@ -61,13 +71,22 @@
   date: none,
   location: none,
   items: (),
+  logo: none,
 ) = {
   grid(
     columns: (1fr, auto),
     column-gutter: 1em,
-    [#text(weight: "bold", fill: gray-text, title)],
+    row-gutter: 0.2em,
+    [
+      #text(size: 1.03em, weight: "bold", fill: dark-text)[*#organization *]
+      #if logo != none [
+        #h(0.3em)#box(inset: 0pt, outset: 0pt, image(logo, height: 1.2em), baseline: 0.19em)
+      ]
+    ],
     align(right)[#text(fill: light-gray, date)],
-    [#text(fill: gray-text, organization)],
+    [
+      #text(size: 1.01em, weight: "bold", fill: gray-text)[#title ]
+    ],
     align(right)[#text(fill: light-gray.lighten(10%), style: "italic", location)],
   )
   if items.len() > 0 {
