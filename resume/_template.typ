@@ -44,14 +44,14 @@
         #h(0.1em)#box(inset: 0pt, outset: 0pt, image(logo, height: 1.2em), baseline: 0.25em)#h(0.3em)
       ]
       #text(size: 1.03em, weight: "bold", fill: dark-text)[
-        *#organization *
-        #if title != none [#h(0.05em)|#h(0.3em)#text(size: 1.05em, fill: black)[#title]]
+        #organization 
       ]
     ],
     align(right)[#text(fill: gray-text, date)],
     {
       if major != none {
-        text(fill: gray-text, style: "regular", major)
+        if title != none [#text(size: 1.10em, weight: "bold", fill: dark-text, style: "italic")[*#title *]]
+        text(fill: gray-text, style: "italic")[ in #major]
       }
     },
     if location != none {
@@ -60,9 +60,9 @@
   )
   if description != none {
     v(2pt)
-    text(fill: dark-text, description)
+    block(inset: ("left": 1em), text(fill: dark-text, description))
   }
-  v(4pt)
+  v(1em)
 }
 
 #let cv-experience(
