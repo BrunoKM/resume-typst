@@ -6,11 +6,11 @@
 #cv-experience(
   title: [Intern & Research Assistant],
   organization: [Apple Machine Learning Research (MLR)],
-  date: [May 2025 – Nov 2025],
+  date: [May 2025 – Now],
   location: [Paris, France],
   items: (
-    [Developed #link("https://arxiv.org/abs/2512.22382")[#text(fill: awesome-blue)[a method for per-module hyperparameter transfer and a parameterisation enabling transfer across major scaling axes]], yielding 1.32× speed-up at 7.2B parameter scale from transferred per-module hyperparameters alone.],
-    [Incorporated my work into the pretraining pipeline for training a large-scale multimodal discrete diffusion model.],
+    [Developed #link("https://arxiv.org/abs/2512.22382")[#text(fill: link-blue)[a method for per-module hyperparameter transfer and a parameterisation enabling transfer across major scaling axes]], yielding 1.32× speed-up at 7.2B parameter scale from transferred per-module hyperparameters alone.],
+    [Incorporated my work into the pretraining pipeline for training large-scale multimodal discrete diffusion models targetting 30B-1T parameter scale.],
   ),
   logo: "/figures/apple-logo.svg",
 )
@@ -22,7 +22,7 @@
   location: [Amsterdam, Netherlands],
   items: (
     [Worked on robustness of deep learning algorithms, particularly in the context of federated learning and non-_iid_ data],
-    [Developed a novel method for efficiently learning invariances in deep learning models – #link("https://arxiv.org/abs/2304.14766")[#text(fill: awesome-blue)[Hyperparameter Optimization through Neural Network Partitioning]]],
+    [Developed a novel method for efficiently learning invariances in deep learning models – #link("https://arxiv.org/abs/2304.14766")[#text(fill: link-blue)[Hyperparameter Optimization through Neural Network Partitioning]]],
   ),
   // logo: "/figures/qualcomm-logo.svg",
 )
@@ -33,8 +33,8 @@
   date: [Sep 2020 – Sep 2021],
   location: [Cambridge, UK],
   items: (
-    [Developed a transferable generative model for accelerating molecular dynamics simulation, resulting in the article #link("https://arxiv.org/abs/2302.01170")[#text(fill: awesome-blue)[Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics]]],
-    [#link("https://microsoft.github.io/knossos-ksc/index.html")[#text(fill: awesome-blue)[Worked on reinforcement learning for optimising deep learning code]]],
+    [Developed a transferable generative model for accelerating molecular dynamics simulation, resulting in the article #link("https://arxiv.org/abs/2302.01170")[#text(fill: link-blue)[Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics]]],
+    [#link("https://microsoft.github.io/knossos-ksc/index.html")[#text(fill: link-blue)[Worked on reinforcement learning for optimising deep learning code]]],
     [Worked on Bayesian Optimisation and probabilistic modelling methods to automate synthetic biology experiments],
   ),
   logo: "/figures/microsoft-logo.svg",
@@ -57,7 +57,7 @@
   date: [Aug 2018 – Sep 2018],
   location: [Cambridge, UK],
   items: (
-    [Developed and published a novel method for training uncertainty-aware neural networks: #link("https://openreview.net/pdf?id=BygSP6Vtvr")[#text(fill: awesome-blue)[Ensemble Distribution Distillation]]],
+    [Developed and published a novel method for training uncertainty-aware neural networks: #link("https://openreview.net/pdf?id=BygSP6Vtvr")[#text(fill: link-blue)[Ensemble Distribution Distillation]]],
   ),
   logo: "/figures/cambridge-logo.svg",
 )

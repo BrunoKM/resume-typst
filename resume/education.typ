@@ -4,7 +4,7 @@
 #section-title("Education")
 
 #cv-entry(
-  title: [PhD in Advanced Machine Learning],
+  title: [PhD],
   organization: [University of Cambridge],
   date: [Jan 2023–2026],
   location: [Department of Engineering],
@@ -14,7 +14,7 @@
     Scaling and hyperparameter transfer, understanding optimisation & generalisation in deep learning, influence functions, theory.
   ],
   logo: "/figures/cambridge-logo.svg",
-  major: [Advanced Machine Learnin],
+  major: [Advanced Machine Learning],
 )
 
 #cv-entry(
@@ -32,16 +32,17 @@
     columns: (auto, 1fr),
     column-gutter: 1.5em,
     row-gutter: 0.3em,
-    text(fill: light-gray)[Performance],
+    align(right + horizon, text(size: 1.02em, fill: gray-text.lighten(20%))[_Performance_]),
     [
-      *Year 1:* 1st Class. Top 10% of class. \
-      *Year 2:* 1st Class. Top 8% of class. \
-      *Year 3:* 1st Class. Top 7% of class. \
-      *Year 4:* 1st Class for Master's Thesis. #text(size: 7pt)[Courses unclassed that year due to COVID-19.]
+      Year 1: *1st Class*. Top 10% of class. \
+      Year 2: *1st Class*. Top 8% of class. \
+      Year 3: *1st Class*. Top 7% of class. \
+      Year 4: *1st Class* for Master's Thesis. #text(size: 7pt, fill: light-gray.darken(30%))[Other courses unclassed that year due to COVID-19.]
     ],
   )
   #v(4pt)
   Awarded Rowley Mainhood College Prize and Frank Marriott Scholarship for academic performance on exams.
   #v(4pt)
-  #text(fill: light-gray)[Master's Thesis:] *Causal Inference: A Probabilistic Modelling Perspective* supervised by Professor Richard Turner.
+  #text(fill: gray-text.lighten(20%))[Master's Thesis:] *Causal Inference: A Probabilistic Modelling Perspective* supervised by Professor Richard Turner.
 ]
+
