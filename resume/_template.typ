@@ -58,8 +58,10 @@
       text(fill: gray-text, style: "italic", location)
     },
   )
+  v(-0.3em)
   if description != none {
     v(2pt)
+    set par(spacing: 0.65em)
     block(inset: ("left": 1em), text(fill: dark-text, description))
   }
   v(1em)
@@ -79,9 +81,9 @@
     row-gutter: 0.2em,
     [
       #text(size: 1.03em, weight: "bold", fill: dark-text)[*#organization *]
-      #if logo != none [
-        #h(0.3em)#box(inset: 0pt, outset: 0pt, image(logo, height: 1.2em), baseline: 0.19em)
-      ]
+      // #if logo != none [
+      //   #h(0.3em)#box(inset: 0pt, outset: 0pt, image(logo, height: 1.2em), baseline: 0.19em)
+      // ]
     ],
     align(right)[#text(fill: light-gray, date)],
     [

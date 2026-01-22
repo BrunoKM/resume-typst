@@ -9,7 +9,7 @@
   date: [May 2025 – Now],
   location: [Paris, France],
   items: (
-    [Developed #link("https://arxiv.org/abs/2512.22382")[#text(fill: link-blue)[a method for per-module hyperparameter transfer and a parameterisation enabling transfer across major scaling axes]], yielding 1.32× speed-up at 7.2B parameter scale from transferred per-module hyperparameters alone.],
+    [Developed #link("https://arxiv.org/abs/2512.22382")[#text(fill: link-blue)[a method for per-module hyperparameter transfer and a parameterisation enabling transfer across major scaling axes]], yielding *1.32× speed-up* at 7.2B parameter scale from transferred per-module hyperparameters alone.],
     [Incorporated my work into the pretraining pipeline for training large-scale multimodal discrete diffusion models targetting 30B-1T parameter scale.],
   ),
   logo: "/figures/apple-logo.svg",

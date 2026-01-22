@@ -32,6 +32,13 @@
   ),
   (
     year: "2025",
+    link: "https://brunokm.github.io/",
+    title: [Implicitly Bayesian Prediction Rules #text(fill: dark-text, weight: "regular")[to appear as a chapter in] Bayesian Deep Learning],
+    authors: [*Bruno Mlodozeniec*, Richard E. Turner],
+    venue: [#text(fill: light-gray)[_Book_\ _In Press_]],
+  ),
+  (
+    year: "2025",
     link: "https://openreview.net/pdf?id=V1FP9WDKa7",
     title: [Probabilistic Modelling is Sufficient for Causal Inference],
     authors: [*Bruno Mlodozeniec*, David Krueger, Richard E. Turner.],

@@ -11,7 +11,9 @@
   description: [
     Supervised by Richard Turner, David Krueger and Bernhard Schölkopf.
 
-    Scaling and hyperparameter transfer, understanding optimisation & generalisation in deep learning, influence functions, theory.
+    #text(fill: light-gray.darken(20%))[_Topics_:] *Scaling* and *hyperparameter transfer*, *understanding optimisation & generalisation* in deep learning, *influence functions*, theory.
+    
+    Awarded *Qualcomm Innovation Fellowship* for my PhD work.
   ],
   logo: "/figures/cambridge-logo.svg",
   major: [Advanced Machine Learning],

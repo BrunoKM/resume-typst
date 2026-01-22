@@ -7,7 +7,7 @@
   columns: (1fr, auto),
   column-gutter: 1em,
   [
-    *Founder* of #link("http://cuai.org.uk")[#text(fill: awesome-blue)[Cambridge University Artificial Intelligence Society]] \
+    *Founder of #link("http://cuai.org.uk")[#text(fill: link-blue)[Cambridge University Artificial Intelligence Society]]* \
     #text(fill: gray-text)[University of Cambridge]
   ],
   align(right)[#text(fill: light-gray)[2018 – 2020]],
