@@ -7,11 +7,11 @@
 
 #cv-pubs((
   (
-    year: "2025",
+    year: "2026",
     link: "https://arxiv.org/abs/2512.22382",
     title: [Completed Hyperparameter Transfer Across Modules, Width, Depth, Batch size and Duration],
     authors: [*Bruno Mlodozeniec*, Pierre Ablin, Louis Bethune, Dan Busbridge, Michal Klein, Jason Ramapuram, Marco Cuturi.],
-    venue: [#text(fill: light-gray)[_Under Review_]],
+    venue: [ICLR],
   ),
   (
     year: "2025",
