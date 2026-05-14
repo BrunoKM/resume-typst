@@ -12,12 +12,12 @@
     #set align(center)
     #set text(8pt, fill: gray)
     Bruno K. Mlodozeniec #h(1fr) #counter(page).display()
-  ]
+  ],
 )
 
 // Font settings
 #set text(font: "Charter", size: 9pt)
-#set par(justify: false, leading: 0.33em, spacing: 0.4em)
+#set par(justify: false, leading: 0.30em, spacing: 0.3em)
 
 // ============================================================================
 // HEADER
@@ -44,9 +44,13 @@
     #h(1fr) | #h(1fr)
     #link("https://brunokm.github.io")[brunokm.github.io]
     #h(1fr) | #h(1fr)
-    #link("https://linkedin.com/in/bkmlodozeniec")[#box(inset: 0pt, outset: 0pt, image("figures/linkedin.svg", height: 1em), baseline: 0.15em)#h(0.2em)/bkmlodozeniec]
+    #link(
+      "https://linkedin.com/in/bkmlodozeniec",
+    )[#box(inset: 0pt, outset: 0pt, image("figures/linkedin.svg", height: 1em), baseline: 0.15em)#h(0.2em)/bkmlodozeniec]
     #h(1fr) | #h(1fr)
-    #link("https://github.com/BrunoKM")[#box(inset: 0pt, outset: 0pt, image("figures/github.svg", height: 1em), baseline: 0.15em)#h(0.4em)github.com/BrunoKM]
+    #link(
+      "https://github.com/BrunoKM",
+    )[#box(inset: 0pt, outset: 0pt, image("figures/github.svg", height: 1em), baseline: 0.15em)#h(0.4em)github.com/BrunoKM]
     // #h(1fr)
   ]
 ]
