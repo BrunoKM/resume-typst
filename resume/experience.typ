@@ -4,9 +4,19 @@
 #section-title("Experience")
 
 #cv-experience(
+  title: [(Incoming) Student Researcher],
+  organization: [Google DeepMind],
+  date: [_(Incoming)_ May 2026 – August 2026],
+  location: [San Francisco, USA],
+  items: (
+    [Make scaling laws estimation more robust.],
+  ),
+  logo: "/figures/apple-logo.svg",
+)
+#cv-experience(
   title: [Intern & Research Assistant],
   organization: [Apple Machine Learning Research (MLR)],
-  date: [May 2025 – Now],
+  date: [May 2025 – May 2026],
   location: [Paris, France],
   items: (
     [Developed #link("https://arxiv.org/abs/2512.22382")[#text(fill: link-blue)[a method for per-module hyperparameter transfer and a parameterisation enabling transfer across major scaling axes]], yielding *1.32× speed-up* at 7.2B parameter scale from transferred per-module hyperparameters alone.],
@@ -34,7 +44,9 @@
   location: [Cambridge, UK],
   items: (
     [Developed a transferable generative model for accelerating molecular dynamics simulation, resulting in the article #link("https://arxiv.org/abs/2302.01170")[#text(fill: link-blue)[Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics]]],
-    [#link("https://microsoft.github.io/knossos-ksc/index.html")[#text(fill: link-blue)[Worked on reinforcement learning for optimising deep learning code]]],
+    [#link("https://microsoft.github.io/knossos-ksc/index.html")[#text(
+      fill: link-blue,
+    )[Worked on reinforcement learning for optimising deep learning code]]],
     [Worked on Bayesian Optimisation and probabilistic modelling methods to automate synthetic biology experiments],
   ),
   logo: "/figures/microsoft-logo.svg",
@@ -63,7 +75,7 @@
 )
 
 #cv-experience(
-  title: [Visual Computing Group Intern],
+  title: [Visual Computing Group Research Visitor],
   organization: [Harvard University],
   date: [July 2018 – Aug 2018],
   location: [Cambridge, USA],

@@ -3,7 +3,12 @@
 
 #section-title("Publications")
 
-#let first-author = box(height: 0pt)[#text(size: 4.2pt, fill: palette1.darken(30%), baseline: -3.5pt, weight: "bold")[#h(0.1em)$diamond.filled$]]
+#let first-author = box(height: 0pt)[#text(
+  size: 4.2pt,
+  fill: palette1.darken(30%),
+  baseline: -3.5pt,
+  weight: "bold",
+)[#h(0.1em)$diamond.filled$]]
 
 #cv-pubs((
   (
@@ -12,6 +17,15 @@
     title: [Completed Hyperparameter Transfer Across Modules, Width, Depth, Batch size and Duration],
     authors: [*Bruno Mlodozeniec*, Pierre Ablin, Louis Bethune, Dan Busbridge, Michal Klein, Jason Ramapuram, Marco Cuturi.],
     venue: [ICLR],
+  ),
+  (
+    year: "2026",
+    link: "https://arxiv.org/abs/2602.21472",
+    title: [The Design Space of Tri-Modal Masked Diffusion Models],
+    authors: text(
+      size: 0.78em,
+    )[Louis Bethune, Victor Turrisi, *Bruno Mlodozeniec*, Pau Rodriguez Lopez, Lokesh Boominathan, Nikhil Bhendawade, Amitis Shidani, Joris Pelemans, Theo X. Olausson, Devon Hjelm, Paul Dixon, Joao Monteiro, Pierre Ablin, Vishnu Banna, Arno Blaas, Nick Henderson, Kari Noriy, Dan Busbridge, Josh Susskind, Marco Cuturi, Irina Belousova, Luca Zappella, Russ Webb, Jason Ramapuram],
+    venue: [#text(fill: light-gray)[Preprint]],
   ),
   (
     year: "2025",
