@@ -44,10 +44,11 @@
         #h(0.1em)#box(inset: 0pt, outset: 0pt, image(logo, height: 1.2em), baseline: 0.25em)#h(0.3em)
       ]
       #text(size: 1.03em, weight: "bold", fill: dark-text)[
-        #organization 
+        #organization
       ]
     ],
     align(right)[#text(fill: gray-text, date)],
+
     {
       if major != none {
         if title != none [#text(size: 1.10em, weight: "bold", fill: dark-text, style: "italic")[*#title *]]
@@ -86,6 +87,7 @@
       // ]
     ],
     align(right)[#text(fill: light-gray, date)],
+
     [
       #text(size: 1.01em, weight: "bold", fill: gray-text)[#title ]
     ],
@@ -117,27 +119,29 @@
     align: (left + horizon, right + horizon, left + top),
     column-gutter: 0.6em,
     row-gutter: 0.85em,
-    ..pubs.map(pub => (
-      text(size: 6.5pt, fill: light-gray.lighten(20%), pub.year),
-      align(center)[
-        #text(fill: venue-color)[#if "venue" in pub [#pub.venue]]
-        #if "award" in pub [\ #text(fill: black, size: 1.09em)[*#pub.award *]]
-      ],
-      [
-        #par(spacing: 0.3em)[
-          #link(pub.link)[#text(fill: link-blue, weight: "bold")[#pub.title]]
-        ]
-        #par(spacing: 0.3em)[
-          #text(fill: gray-text.darken(20%))[#pub.authors]
-        ]
-        #if "extra" in pub and pub.extra != none [
-          #par(spacing: 0.2em)[
-            #text(fill: gray-text.lighten(10%))[#pub.extra]
+    ..pubs
+      .map(pub => (
+        text(size: 6.5pt, fill: light-gray.lighten(20%), pub.year),
+        align(center)[
+          #text(fill: venue-color)[#if "venue" in pub [#pub.venue]]
+          #if "award" in pub [\ #text(fill: black, size: 1.09em)[*#pub.award *]]
+        ],
+        [
+          #par(spacing: 0.3em)[
+            #link(pub.link)[#text(fill: link-blue, weight: "bold")[#pub.title]]
           ]
-        ]
-        // #if pub.venue != none [ \ #text(style: "italic", fill: venue-color)[#pub.venue]]
-      ],
-    )).flatten()
+          #par(spacing: 0.3em)[
+            #text(fill: gray-text.darken(20%))[#pub.authors]
+          ]
+          #if "extra" in pub and pub.extra != none [
+            #par(spacing: 0.2em)[
+              #text(fill: gray-text.lighten(10%))[#pub.extra]
+            ]
+          ]
+          // #if pub.venue != none [ \ #text(style: "italic", fill: venue-color)[#pub.venue]]
+        ],
+      ))
+      .flatten()
   )
 }
 
